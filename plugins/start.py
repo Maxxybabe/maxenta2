@@ -121,9 +121,11 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
-        [
+        [   InlineKeyboardButton(
+                "Join Channel 1",
+                url = "https://t.me/+Nfx1Y4fI-DdlMjg0"), 
             InlineKeyboardButton(
-                "Join Channel",
+                "Join Channel 2",
                 url = client.invitelink)
         ]
     ]
