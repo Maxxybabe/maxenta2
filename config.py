@@ -49,7 +49,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #Chameloen Channel 
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+Nfx1Y4fI-DdlMjg0')
+CHNL_LNK = os.environ.get('CHNL_LNK', 'https://t.me/+Nfx1Y4fI-DdlMjg0')
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
